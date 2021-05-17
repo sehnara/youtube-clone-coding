@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+/*-----------------------------------  */
+/* SEARCH sector */
+.header {
+  background-color: rgb(48, 48, 48);
+}
+.Search-bar {
+  display: flex;
+
+  width: 1000px;
+  height: 1.7rem;
+  line-height: 1.7rem;
+  padding: 1rem;
+
+  margin: auto;
+  /* border: 1px solid white; */
+  background-color: rgb(48, 48, 48);
+}
+.logo {
+  color: rgb(255, 175, 15);
+  font-size: 2.3em;
+}
+.site-title {
+  margin-left: 0.2em;
+  margin-right: 7rem;
+  color: rgb(255, 175, 15);
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+.input-search {
+  width: 350px;
+  height: 25px;
+  border: 1px solid rgb(120, 120, 120);
+}
+.button-search {
+  width: 70px;
+  height: 29px;
+
+  color: rgb(120, 120, 120);
+  border: 1px solid rgb(120, 120, 120);
+  box-sizing: border-box;
+  background-color: rgb(224, 224, 224);
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+.button-search:hover {
+  color: rgb(43, 43, 43);
+  background-color: rgb(163, 163, 163);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.video-screen {
+  margin: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*-----------------------------------  */
+/* video list */
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 1000px;
+  margin: auto;
+}
+.video {
+  background-color: rgb(48, 48, 48);
+  display: flex;
+
+  width: 490px;
+  height: 160px;
+  margin: 4px;
+  /* border: 1px solid white; */
+  cursor: pointer;
+}
+.video:hover {
+  transform: scale(1.04);
+  z-index: 10;
+}
+.video-thumbnail {
+  width: 252px;
+  height: 137px;
+  /* border: 1px solid white; */
+  margin: 5px;
+  color: aliceblue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.video-detail {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: aliceblue;
+
+  text-align: left;
+  margin-top: 5px;
+  padding-left: 5px;
+}
+.video-title {
+  font-family: "Roboto", sans-serif;
+
+  width: 245px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  font-weight: 400;
+}
+.video-provider {
+  color: aliceblue;
+  font-family: "Roboto", sans-serif;
+  font-family: 100;
+  opacity: 0.6;
+}
+.video-opts {
+  color: aliceblue;
+  padding-top: 65px;
+  font-family: "Roboto", sans-serif;
+  opacity: 0.6;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.video_hover {
+  margin: 10px auto;
+  position: sticky;
+  top: 10px;
+  z-index: 10;
 }
