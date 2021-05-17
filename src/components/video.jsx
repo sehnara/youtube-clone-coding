@@ -15,7 +15,8 @@ class Video extends Component {
         return (
             <div 
                 className="video" 
-                onMouseEnter = {this.handleMouseHover}
+                onMouseEnter={this.handleMouseHover}
+                onMouseOver = {this.handleMouseHover}                
             >
                 <span className="video-thumbnail" style = {style}></span>
                 <div className="video-detail">

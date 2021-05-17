@@ -7,17 +7,18 @@ class Videos extends Component {
     render() {        
         // 1. variables
         const videos = this.props.videos;
+        
         return (
             <div className="videos">
                 <iframe className = "video_hover" 
                     type="text/html" 
-                    width="980" 
+                    width="985" 
                     height="545"
                     src={this.props.src}
                     frameBorder="0">
                 </iframe> 
                 {
-                    videos.map(video=>(
+                    videos.map(video=>(                        
                         <Video
                             key={video.id}
                             channelId={video.channelId}
