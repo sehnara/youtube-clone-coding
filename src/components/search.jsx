@@ -9,12 +9,21 @@ class Search extends Component {
         this.props.onSearch(input);
         this.inputRef.current.value='';
     }    
+
+    handleClick =()=>{
+        this.props.onClick();
+    }
     render() {
         return (
             <div className="header">
                 <div className="Search-bar">
-                    <span className="logo"><i className="fab fa-youtube"></i></span>
-                    <span className="site-title">SehoonTube</span>
+                    <div 
+                        className="logo-container"
+                        onClick={this.handleClick}
+                    >
+                        <span className="logo"><i className="fab fa-youtube"></i></span>
+                        <span className="site-title">SehoonTube</span>
+                    </div>
                     <form 
                         className="search-form"
                         onSubmit ={this.handleSearch}

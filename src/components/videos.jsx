@@ -26,7 +26,7 @@ class Videos extends Component {
                             provider={video.provider}
                             details = {video.details}
                             thumbnails = {video.thumbnails}
-
+                            
                             handleHoverVideo={this.props.handleHoverVideo}
                         />
                     ))

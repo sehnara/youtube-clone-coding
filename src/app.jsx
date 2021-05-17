@@ -59,6 +59,10 @@ class App extends Component {
     this.setState({searchOn:true})
     this.setState({searchInput:input})      
   }
+  handleClick = () =>{
+    this.setState({searchOn:false})
+  }
+
 
   // 2. render()
   render(){   
@@ -66,13 +70,14 @@ class App extends Component {
       <>      
         <Search
           onSearch = {this.handleSearch}
+          onClick = {this.handleClick}
         /> 
         {
           !this.state.searchOn&&
           <Videos
             videos={this.state.videos}
             src = {this.state.hoverSrc}
-
+            
             handleHoverVideo={this.handleHoverVideo}          
           />     
         }

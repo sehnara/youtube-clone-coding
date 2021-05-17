@@ -5,6 +5,9 @@ class Video extends Component {
         event.preventDefault();
         this.props.handleHoverVideo(this.props.channelId);
     }
+    handleClick = ()=>{
+
+    }
 
     render() {
         const style = {
