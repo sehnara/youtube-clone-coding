@@ -5,6 +5,8 @@ class SearchList extends Component {
         const style = {
             backgroundImage : `url(${this.props.thumbnails})`,
             backgroundSize : 'cover',
+            backgroundRepeat: 'no-repeat',     
+            backgroundPosition: 'center'       
         };
         return (
             <div className="right-list">

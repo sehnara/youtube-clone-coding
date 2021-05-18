@@ -51,7 +51,8 @@ class SearchVideos extends Component {
     }
 
     render() {    
-        const videos = [...this.state.videos];           
+        const videos = [...this.state.videos];   
+        // console.log(this.props.input);        
         const src =  `https://www.youtube.com/embed/${this.state.mainVideo.videoId}`     
         return (
             <div className="video-info">
